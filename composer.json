@@ -1,0 +1,25 @@
+{
+    "name": "christian-giupponi/nexmo",
+    "description": "This is a Laravel4 package that helps you integrate Nexmo sms services into your site.",
+    "License": "MIT",
+    "authors": [
+        {
+            "name": "Christian Giupponi",
+            "email": "christian.giupponi@stilogo.it"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "guzzlehttp/guzzle": "~5.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "ChristianGiupponi\\Nexmo\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
