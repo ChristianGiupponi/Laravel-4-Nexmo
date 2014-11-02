@@ -27,6 +27,10 @@ Now add the Facade in aliases array:
 
         'Nexmo'    => 'ChristianGiupponi\Nexmo\Facades\Nexmo',
         
+You also need to pusblish the config file to add your own api and secret key that you can find on your Nexmo's dashboard:
+
+    php artisan config:publish christian-giupponi/nexmo
+
 And you're done. Now you can call nexmo package using 
 
     Nexmo::getBalance();
