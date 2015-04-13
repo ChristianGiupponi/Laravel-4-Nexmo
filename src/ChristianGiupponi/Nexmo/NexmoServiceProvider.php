@@ -12,16 +12,6 @@ class NexmoServiceProvider extends ServiceProvider {
 	protected $defer = false;
 
 	/**
-	 * Bootstrap the application events.
-	 *
-	 * @return void
-	 */
-	public function boot()
-	{
-		$this->package('christian-giupponi/nexmo');
-	}
-
-	/**
 	 * Register the service provider.
 	 *
 	 * @return void
@@ -41,7 +31,7 @@ class NexmoServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return [];
 	}
 
 }
