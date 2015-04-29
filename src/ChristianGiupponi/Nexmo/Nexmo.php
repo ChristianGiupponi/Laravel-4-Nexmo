@@ -82,7 +82,7 @@ class Nexmo {
         $required = [
             'from' => $from,
             'to'   => $to,
-            'text' => urlencode( $text )
+            'text' => htmlentities( $text )
         ];
 
         return $this->post_request( $required, $options );
